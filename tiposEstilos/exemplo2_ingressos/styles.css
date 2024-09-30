@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: azure;
+  color: black;
+  /*Garante que o body ocupe toda a altura da tela  */
+  min-height: 100vh;
+}
+
+header {
+  background-color: #4E8E97;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+header .logo {
+  /* uso do flexbox para alinhar a logo e o titulo */
+  display: flex;
+
+  /* alinha a verticalmente os items da div em questão */
+  align-items: center;
+
+  /* centraliza os itens horizontalmente */
+  justify-content: center;
+  /* background-color: rgb(8, 1, 1); */
+}
+
+header .logo img{
+    max-width: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+header .logo h1{
+  margin-bottom: 10px ;
+}
+
+nav ul{
+  list-style: none; /* tira as bolinhas da lista  */
+  display:flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li{ /* estilizar a linha da lista */
+  margin: 0 15px; /* espaçamento entre os itens da lista, funciona as ordens no sentido horario(top, right, bottom, left)*/
+}
+
+nav ul li a{
+  color:aliceblue;
+  text-decoration: none; /*tira o sublinhado */
+  font-weight: bold; /* deixa em negrito*/
+}
+
+nav ul li a:hover{ /*é uma subfunção*/
+  text-decoration: underline; /*coloca o sublinhado */
+}
+
+main{
+  padding: 20px;
+}
+
+main section{
+  margin-bottom: 40px;
+}
+
+#home{
+  background-color: #afd8de; /*arredonda as quinas*/
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#home h2{
+  color: #4E8E97;
+}
+
+.eventos-container{
+  display: flex; 
+  gap: 20px; /*espaçamentos*/
+}
+
+.eventos-item{
+  background-color: #4E8E97 ;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  width:100%;
+}
+
+footer{
+  text-align: center;
+  width:100%;
+  color: aliceblue;
+  background-color: black;
+  margin-top: 39px;
+  padding: 10px;
+  
+}
+
+
+
+ /*
+                       top 
+                ______________________
+     left       |      Conteudo      |   right
+                |____________________|
+                       bottom  (para baixo)   
+                     
+ */ 
